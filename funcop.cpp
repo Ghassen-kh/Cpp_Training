@@ -10,10 +10,10 @@ int main(int argc, char ** argv){
     int i;
     int (*pFunc)(int);
     pFunc=&f; 
-    i=(*pFunc)(47);
+    i=(*pFunc)(50);
     int j=f(47);
     printf("i is %d\n",i);
-        printf("j is %d\n",j);
+    printf("j is %d\n",j);
 
     return 0;
 }

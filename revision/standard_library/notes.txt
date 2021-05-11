@@ -1,0 +1,72 @@
+**  the standard C library is fully included in the c++ standard 
+
+******The standard c library******
+==> Features : 
+    -file I/O
+    -strings : arrays of characters 
+    -memory allocation 
+    -date and time 
+    -error handling 
+    -other utilities 
+
+==> include in c++ : #include <cstdio>
+==> runtime support : called libc , for the gcc runtime compile system, it's called the glibc
+
+==> for further information : The standard C library, by P.J. Plauger 
+cpp.bw.org
+
+
+
+**  functions signatures for files :
+
+FILE * fopen (const char * filename, const char * mode );
+char * fgets (char * str, int count, FILE * stream );
+int fputs (const char * str, FILE * stream);
+size_t fread ( void * buffer, size_t size, size_t count, FILE * stream);
+int fwrite (const void * buffer, size_t size, size_t count, FILE * stream);
+
+int rename (const char * oldname, const char * newname );
+int remove (const char * filename );
+
+int puts ( const char * s );
+char * gets ( char * s ); // it's OBSOLUTE and it's dangerous
+
+**  a few handy printf() format specifers 
+
+Specifier            Meaning 
+
+%d                   Integer number
+%f                   Floating point number 
+%s                   C-string 
+%c                   Character 
+%p                   Pointer 
+%%                   The % character 
+
+int printf ( const char * format,...);
+int fprintf ( FILE * fh, const char * format,....);
+int sprintf ( char * buf, const char * format, ....);
+int snprintf ( char * buf, size_t bufsize, const char * format);
+
+
+**  strings:
+
+char * strncpy ( char * dest, const char * src, size_t count);
+char * strncat ( char * dest, const char * src, size_t count);
+int strcmp ( const char * lhs, const char rhs );
+size_t strlen ( char * str );
+const char * strchr ( const char * str, int ch );
+const char * strstr ( const char * dest, const char * src);
+
+
+**  choice between (malloc - free) or (new - delete ) in c++
+    if you allocationg primitive types that don't need constructors and destructors, malloc and 
+    free will work fine and may will be more efficient in some circanstances, otherwise call 
+    (new - delete) because there actually call the constructors and destructors
+
+
+void * malloc ( size_t size);
+void free ( void * ptr );
+void * calloc ( size_t num, size_t size);
+
+void perror (const char * s);
+char * strerror (int errnum );

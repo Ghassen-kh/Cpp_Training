@@ -1,0 +1,49 @@
+**  object : is an instance of the class ==> instanciate to describe the process of creating 
+an object
+
+**  members ; are the content of an object 
+    there are 2 elements : data members (properties) and function members (methods)
+
+**  constructor : is called when an object is created 
+
+**  destructor : is called when the object is destroyed 
+
+=> the C++ class is based on the C struct, in a struct members default public access, but in a
+ class members default private access 
+
+**  accessor methods for data members you want access to : function members  designed to set 
+values in and get values from the data members ==> getters and setters 
+
+****** In classes you can do : ******
+- variety of constructors
+- overload or disallow default constructors
+- allocate and deallocate memory 
+- overload operators 
+- function operator
+- conversion operator
+
+
+**  constructors and destructors are special member functions 
+    - there several types of constructors in c++ and one type of destructor 
+    - when you don't provide a constructor and destructor, implecitely provides a default constructor
+    - which is a constructor that takes no arguments 
+    - there is also a copy constructor provided and a copy operator provided and a destructor provided
+
+NB: search for overloading constructors : rule of three 
+NB: search for size_t type 
+
+**  overload :
+    there are 2 distinct ways to overload operators in c++:
+    - one with member functions as part of a class definition 
+    - the other is seperate non member functions 
+
+**  member access specifiers : in class inheritance 
+
+Specifier      Based class      Derived class       Other objects
+
+public              OK               OK                  OK
+
+protected           OK               OK                  NO
+
+private             OK               NO                  NO
+

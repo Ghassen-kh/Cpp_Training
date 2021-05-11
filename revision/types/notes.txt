@@ -1,0 +1,56 @@
+----------------Types---------------- 
+**  int :
+    size : 4 bytes 
+    value : 32-bit signed integer
+**  unsigned int :
+    size : 4 bytes
+    value : 32-bit unsigned integer => the same size of integer with no bit reserved for sign
+
+**  The integer types :
+    char - signed char (8bit )
+    short int - unsigned short int (16 bits)
+    int - unsigned int (32 bit)
+    long int - unsigned long int (64 bit)
+    long long int - unsigned long long int (128bit or 64bit) 
+
+**  The floating point types :
+    float 
+    double 
+    long double 
+
+**  Boolean type 
+    bool (C++ only -- C++98)
+    values : true or false 
+
+    _Bool (C only --C99)
+    Header : <stdbool.h>
+    Alias : bool
+    values : true or false 
+
+**  Arrays 
+
+**  Structures and Classes 
+    c++ classes are based on the c structures 
+
+**  Union 
+    a union is a set of overlapping object types 
+
+**  pointers 
+    a pointer is a reference to an object of a giving type 
+
+**  C++ Reference type 
+    very much like a pointer but with different semantics 
+    references are immutable,the major difference is that, once they are defined they cannot be change to refer to a different object 
+ 
+**  qualifiers 
+    2 types :
+    -storage class : static / register / extern
+    -type qualifiers : const / volatile / mutable 
+
+    NB :the auto is deprecated (removed)
+    
+**  enumeration 
+    works more like constants than like types 
+
+**  Union 
+    data structure that allows you to use the same memory space for different types  

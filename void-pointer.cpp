@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <iostream>
 void * func (void *);
 int main(int argc, char ** argv){
     printf("this is void pointer.c\n");

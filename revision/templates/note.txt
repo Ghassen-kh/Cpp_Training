@@ -1,0 +1,6 @@
+**  Templates 
+    - the feature that supports generic programming ==> programming in terms of algorithms independant 
+    of types ==> generic programming refers to code that works independant of type
+    - the compiler must generate specializations for every instanciation of a template 
+    - c++ supports both template functions and template classes 
+    - equivalent to macros in c

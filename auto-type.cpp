@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <typeinfo>
 using namespace std;
 int func(){
@@ -9,17 +9,18 @@ int main(int argc, char ** argv){
     cout<<x<<endl;
     cout<<typeid(x).name()<<endl;
     return 0;
-}*/
+}
 
 // other example 
-
+/*
 #include<iostream>
 #include<vector>
 using namespace std;
-int main(int argc, char ** argv){
-    vector<int> i={1,2,3,4,5};
-    for(auto it=i.begin();it !=i.end();++it){
+int main(int argc, char** argv){
+    vector<int> v = {1,2,3,4,5,6,7};
+    for (auto it=v.begin(); it!=v.end();++it){
         cout<<*it<<endl;
     }
     return 0;
 }
+*/
